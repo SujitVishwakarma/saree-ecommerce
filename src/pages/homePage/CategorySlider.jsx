@@ -46,14 +46,14 @@ const CategorySlider = ({ categories = defaultCategories }) => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 4,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
           slidesToScroll: 2,
         },
       },
@@ -76,7 +76,7 @@ const CategorySlider = ({ categories = defaultCategories }) => {
   };
 
   return (
-    <div className="relative px-4 py-2 mb-10 w-full max-w-[1460px] mx-auto">
+    <div className="relative px-4 py-2 lg:mb-10 mb-2 w-full max-w-[1460px] mx-auto">
       {/* Custom Buttons Outside the Slider */}
       <div
         onClick={(e) => e.stopPropagation()}
@@ -99,7 +99,7 @@ const CategorySlider = ({ categories = defaultCategories }) => {
       </div>
 
       {/* Slider Component */}
-      <div className="px-8">
+      <div className="lg:px-8 px-3">
         <Slider ref={sliderRef} {...settings}>
           {/* Dynamically render each slide */}
           {categories.map((category, index) => (

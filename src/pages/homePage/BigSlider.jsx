@@ -65,7 +65,7 @@ const BigSlider = ({ categories = defaultCategories }) => {
       {/* Custom Buttons Outside the Slider */}
       <div
         onClick={(e) => e.stopPropagation()}
-        className="absolute top-1/2 left-[14px] transform -translate-y-1/2 z-10"
+        className="absolute top-1/2 lg:left-[14px] left-[5px] transform -translate-y-1/2 z-10"
       >
         <button
           onClick={slidePrev}
@@ -74,7 +74,7 @@ const BigSlider = ({ categories = defaultCategories }) => {
           <FaChevronLeft className="text-xl" />
         </button>
       </div>
-      <div className="absolute top-1/2 right-[15px] transform -translate-y-1/2 z-10">
+      <div className="absolute top-1/2 lg:right-[15px] right-[5px] transform -translate-y-1/2 z-10">
         <button
           onClick={slideNext}
           className="bg-white border border-secondary-1/20 bg-opacity-50 text-secondary-1 rounded-full w-14 h-14 shadow z-30 flex items-center justify-center"
@@ -84,7 +84,7 @@ const BigSlider = ({ categories = defaultCategories }) => {
       </div>
 
       {/* Slider Component */}
-      <div className="px-8">
+      <div className="lg:px-8 px-1">
         <Slider ref={sliderRef} {...settings}>
           {/* Dynamically render each slide */}
           {categories.map((category, index) => (

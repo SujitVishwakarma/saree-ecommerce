@@ -58,7 +58,7 @@ const Spotlight = () => {
     <div className="p-6 lg:py-10 w-full h-full max-w-[1400px] mx-auto font-inter">
       <h2 className="text-sm uppercase text-secondary-1 font-bold mb-1 font-inter">In the Spotlight</h2>
       <h1 className="text-2xl font-bold mb-6">Covetable finds this Week</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {spotlightData.map((item, index) => (
           <div key={index} className="flex flex-col items-left text-left bg-white cursor-pointer rounded-lg overflow-hidden">
             <img src={item.image} alt={item.brand} className="w-full h-full object-cover" />
