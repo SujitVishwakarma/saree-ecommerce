@@ -1,4 +1,3 @@
-
 import sl1 from '../../assets/LandingImge/landingPage/sl1.avif';
 import sl2 from '../../assets/LandingImge/landingPage/sl2.avif';
 import sl3 from '../../assets/LandingImge/landingPage/sl3.avif';
@@ -60,13 +59,33 @@ import exclusivesSl7 from '../../assets/LandingImge/landingPage/exclusiveSl7.avi
 import exclusivesSl8 from '../../assets/LandingImge/landingPage/exclusiveSl8.avif';
 import exclusivesSl9 from '../../assets/LandingImge/landingPage/exclusiveSl9.avif';
 import exclusivesSl10 from '../../assets/LandingImge/landingPage/exclusiveSl10.avif';
-
-
+import hotestSl1 from '../../assets/LandingImge/landingPage/hotestSl1.avif';
+import hotestSl2 from '../../assets/LandingImge/landingPage/hotestSl2.avif';
+import hotestSl3 from '../../assets/LandingImge/landingPage/hotestSl3.avif';
+import hotestSl4 from '../../assets/LandingImge/landingPage/hotestSl4.avif';
+import hotestSl5 from '../../assets/LandingImge/landingPage/hotestSl5.avif';
+import hotestSl6 from '../../assets/LandingImge/landingPage/hotestSl6.avif';
+import hotestSl7 from '../../assets/LandingImge/landingPage/hotestSl7.avif';
+import hotestSl8 from '../../assets/LandingImge/landingPage/hotestSl8.avif';
+import hotestSl9 from '../../assets/LandingImge/landingPage/hotestSl9.avif';
+import hotestSl10 from '../../assets/LandingImge/landingPage/hotestSl10.avif';
+import fashion1 from '../../assets/LandingImge/landingPage/fashion1.avif';
+import fashion2 from '../../assets/LandingImge/landingPage/fashion2.avif';
+import fashion3 from '../../assets/LandingImge/landingPage/fashion3.avif';
+import fashion4 from '../../assets/LandingImge/landingPage/fashion4.avif';
+import fashion5 from '../../assets/LandingImge/landingPage/fashion5.avif';
+import fashion6 from '../../assets/LandingImge/landingPage/fashion6.avif';
+import fashion7 from '../../assets/LandingImge/landingPage/fashion7.avif';
+import fashion8 from '../../assets/LandingImge/landingPage/fashion8.avif';
+import fashion9 from '../../assets/LandingImge/landingPage/fashion9.avif';
+import fashion10 from '../../assets/LandingImge/landingPage/fashion10.avif';
+import googlePly from '../../assets/LandingImge/landingPage/googlePlay.avif';
+import appleStore from '../../assets/LandingImge/landingPage/appleStore.avif';
 
 
 
 // Exporting images as named exports
 export { 
-  sl1, sl2,sl3,sl4,sl5,sl6,sl7,sl8,sl9,sl10,sl11,sl12,sl13,bigSl1,bigSl2,bigSl3,bigSl4,Bigbanner1 ,Bigbanner2,Bigbanner3,Bigbanner4,Bigbanner5,Bigbanner6,Bigbanner7,Bigbanner8,spotlight1,spotlight2,spotlight3,spotlight4,spotlight5,spotlight6,spotlight7,spotlight8,spotlight9,spotlight10,hiddenhem1,hiddenhem2,hiddenhem3,hiddenhem4,hiddenhem10,hiddenhem5,hiddenhem6,hiddenhem7,exclusive1,exclusive2,exclusive3,exclusive4,exclusive5,exclusive6,exclusive8,exclusive9,exclusivesSl1,exclusivesSl2,exclusivesSl3,exclusivesSl4,exclusivesSl5,exclusivesSl6,exclusivesSl7,exclusivesSl8,exclusivesSl9,exclusivesSl10
+  sl1, sl2,sl3,sl4,sl5,sl6,sl7,sl8,sl9,sl10,sl11,sl12,sl13,bigSl1,bigSl2,bigSl3,bigSl4,Bigbanner1 ,Bigbanner2,Bigbanner3,Bigbanner4,Bigbanner5,Bigbanner6,Bigbanner7,Bigbanner8,spotlight1,spotlight2,spotlight3,spotlight4,spotlight5,spotlight6,spotlight7,spotlight8,spotlight9,spotlight10,hiddenhem1,hiddenhem2,hiddenhem3,hiddenhem4,hiddenhem10,hiddenhem5,hiddenhem6,hiddenhem7,exclusive1,exclusive2,exclusive3,exclusive4,exclusive5,exclusive6,exclusive8,exclusive9,exclusivesSl1,exclusivesSl2,exclusivesSl3,exclusivesSl4,exclusivesSl5,exclusivesSl6,exclusivesSl7,exclusivesSl8,exclusivesSl9,exclusivesSl10,hotestSl1,hotestSl2,hotestSl3,hotestSl4,hotestSl5,hotestSl6,hotestSl7,hotestSl8,hotestSl9,hotestSl10,fashion1,fashion2,fashion3,fashion4,fashion5,fashion6,fashion7,fashion8,fashion9,fashion10,googlePly,appleStore
 
 };

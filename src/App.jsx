@@ -7,7 +7,7 @@ const App = () => {
     <div className="flex flex-col relative w-full h-full">
       <TopHeader/>
       <Outlet/>
-      <div className="flex absolute bottom-0 left-0 py-4">
+      <div>
         <Footer/>
       </div>
     </div>

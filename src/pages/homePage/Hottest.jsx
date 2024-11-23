@@ -5,87 +5,106 @@ import Slider from "react-slick";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import * as HomeImage from "../../components/HomePageImages/HomeImages";
 
-// Spotlight data with discount details
-const spotlightData = [
-  {
-    image: HomeImage.exclusive1,
-    discount: "Up to 50% off",
-  },
-  {
-    image: HomeImage.exclusive2,
-    discount: "Up to 50% off",
-  },
-  {
-    image: HomeImage.exclusive3,
-    discount: "Up to 65% off",
-  },
-  {
-    image: HomeImage.exclusive4,
-    discount: "Min 40% off",
-  },
-  {
-    image: HomeImage.exclusive5,
-    discount: "Up to 35% off",
-  },
-  {
-    image: HomeImage.exclusive6,
-    discount: "Up to 35% off",
-  },
-  {
-    image: HomeImage.exclusive9,
-    discount: "Up to 35% off",
-  },
-  {
-    image: HomeImage.exclusive8,
-    discount: "Up to 35% off",
-  },
-  {
-    image: HomeImage.exclusive9,
-    discount: "Up to 35% off",
-  },
-  {
-    image: HomeImage.exclusive4,
-    discount: "Up to 35% off",
-  },
-];
-const exclusiveSliderTwoData = [
-  {
-    image: HomeImage.exclusivesSl1,
-  },
-  {
-    image: HomeImage.exclusivesSl2,
-  },
-  {
-    image: HomeImage.exclusivesSl3,
-  },
-  {
-    image: HomeImage.exclusivesSl4,
-  },
-  {
-    image: HomeImage.exclusivesSl5,
-  },
-  {
-    image: HomeImage.exclusivesSl6,
-  },
-  {
-    image: HomeImage.exclusivesSl7,
-  },
-  {
-    image: HomeImage.exclusivesSl8,
-  },
-  {
-    image: HomeImage.exclusivesSl9,
-  },
-  {
-    image: HomeImage.exclusivesSl10,
-  },
-];
-
-const Exclusive = () => {
-  const sliderRef = useRef(null);
-  const sliderRef2 = useRef(null);
-  // Slider settings with responsive behavior
-  const settings = {
+const hottestData =[
+    {
+        image: HomeImage.hotestSl1,
+      },
+      {
+        image: HomeImage.hotestSl2,
+      },
+      {
+        image: HomeImage.hotestSl3,
+      },
+      {
+        image: HomeImage.hotestSl4,
+      },
+      {
+        image: HomeImage.hotestSl5,
+      },
+      {
+        image: HomeImage.hotestSl6,
+      },
+      {
+        image: HomeImage.hotestSl7,
+      },
+      {
+        image: HomeImage.hotestSl8,
+      },
+      {
+        image: HomeImage.hotestSl9,
+      },
+      {
+        image: HomeImage.hotestSl10,
+      },
+]
+const fashionData =[
+    {
+        image: HomeImage.fashion1,
+      },
+      {
+        image: HomeImage.fashion2,
+      },
+      {
+        image: HomeImage.fashion3,
+      },
+      {
+        image: HomeImage.fashion4,
+      },
+      {
+        image: HomeImage.fashion5,
+      },
+      {
+        image: HomeImage.fashion6,
+      },
+      {
+        image: HomeImage.fashion7,
+      },
+      {
+        image: HomeImage.fashion8,
+      },
+      {
+        image: HomeImage.fashion9,
+      },
+      {
+        image: HomeImage.fashion10,
+      },
+]
+const Hottest = () => {
+    const sliderRef = useRef(null);
+    const sliderRef2 = useRef(null);
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      };
+      //   second slider
+  const secondsettings = {
     dots: false,
     infinite: true,
     speed: 500,
@@ -104,38 +123,6 @@ const Exclusive = () => {
         breakpoint: 768,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-  //   second slider
-  const secondsettings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -148,8 +135,7 @@ const Exclusive = () => {
       },
     ],
   };
-
-  // Functions to control the slider via ref
+    // Functions to control the slider via ref
   const slideNext = (e) => {
     e.stopPropagation();
     sliderRef.current && sliderRef.current.slickNext();
@@ -160,7 +146,8 @@ const Exclusive = () => {
     sliderRef.current && sliderRef.current.slickPrev();
   };
 
-  const slideNext2 = (e) => {
+//   second slider button 
+const slideNext2 = (e) => {
     e.stopPropagation();
     sliderRef2.current && sliderRef2.current.slickNext();
   };
@@ -171,14 +158,13 @@ const Exclusive = () => {
   };
   return (
     <div className="w-full h-full max-w-[1460px] mx-auto">
-      {/* Title Section */}
-      <div className="p-6 lg:py-10 w-full h-full font-inter">
-        <h3 className="text-sm uppercase text-secondary-1 font-bold mb-1 font-inter">
-          ONLY ON NYKAA
+        {/* Title Section */}
+      <div className="p-6 lg:mt-10 w-full h-full font-inter">
+        <h3 className="text-base uppercase text-secondary-1 font-bold mb-1 font-inter">
+            NEW ON NYKAA FASHION
         </h3>
-        <h2 className="text-2xl font-bold mb-6">Exclusive Labels to Own</h2>
+        <h2 className="lg:text-3xl text-2xl font-bold">Hottest drops of the season</h2>
       </div>
-
       {/* Slider Section */}
       <div className="relative px-4 mb-5">
         {/* Custom Navigation Buttons Outside the Slider */}
@@ -207,12 +193,12 @@ const Exclusive = () => {
         {/* Slider Component */}
         <Slider ref={sliderRef} {...settings}>
           {/* Use px-4 for padding between cards */}
-          {spotlightData.map((item, index) => (
+          {hottestData.map((item, index) => (
             <div
               key={index}
-              className="px-2" // Add px-4 to give spacing between cards
+              className="" // Add px-4 to give spacing between cards
             >
-              <div className="bg-white cursor-pointer rounded-lg overflow-hidden ">
+              <div className="bg-white cursor-pointer rounded-xs overflow-hidden ">
                 <img
                   src={item.image}
                   alt={`Exclusive item ${index + 1}`}
@@ -229,14 +215,18 @@ const Exclusive = () => {
           ))}
         </Slider>
       </div>
+
       <div className="relative px-4 mb-8">
         {/* Custom Navigation Buttons Outside the Slider */}
+        {/* Title Section */}
+      <div className="p-6 lg:mt-10 w-full h-full font-inter">
+        <h3 className="text-base uppercase text-secondary-1 font-bold mb-1 font-inter">
+          FIRST IN FASHION
+        </h3>
+        <h2 className="lg:text-3xl text-base font-bold mb-0">Stay stylish with latest season styles</h2>
       </div>
-
-      {/* second slider  */}
-      <div className="relative px-4 mb-5">
-        {/* Custom Navigation Buttons Outside the Slider */}
-        <div
+      {/* Custom Navigation Buttons Outside the Slider */}
+      <div
           onClick={(e) => e.stopPropagation()}
           className="absolute top-1/2 left-[-8px] transform -translate-y-1/2 z-10"
         >
@@ -257,10 +247,9 @@ const Exclusive = () => {
             <FaChevronRight className="text-xl" />
           </button>
         </div>
-
         <Slider ref={sliderRef2} {...secondsettings}>
           {/* Use px-4 for padding between cards */}
-          {exclusiveSliderTwoData.map((item, index) => (
+          {fashionData.map((item, index) => (
             <div
               key={index}
               className="px-2" // Add px-4 to give spacing between cards
@@ -283,7 +272,7 @@ const Exclusive = () => {
         </Slider>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Exclusive;
+export default Hottest

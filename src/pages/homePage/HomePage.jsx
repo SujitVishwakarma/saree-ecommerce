@@ -6,6 +6,7 @@ import BigBanner from './BigBanner'
 import Spotlight from './Spotlight'
 import HiddenGems from './HiddenGems'
 import Exclusive from './Exclusive'
+import Hottest from './Hottest'
 const HomePage = () => {
   return (
     <div className='w-full h-full'>
@@ -16,6 +17,7 @@ const HomePage = () => {
       <Spotlight/>
       <HiddenGems/>
       <Exclusive/>
+      <Hottest/>
     </div>
   )
 }
