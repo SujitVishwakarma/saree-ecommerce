@@ -1,83 +1,152 @@
-import React, { useRef } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Optional: For custom icons
+import React, { useState, useEffect, useRef } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+// Import your component
+import WhatsNewWomen from "../navbar/WomenWhtsNew";
 
 const WomenNavSlider = () => {
-  const sliderRef = useRef(null);  // Create a reference for the slider
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [hoverIndex, setHoverIndex] = useState(null);
+  const [startIndex, setStartIndex] = useState(0);
+  const timeoutRef = useRef(null);
 
-  // Slider settings
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 6,
-    slidesToScroll: 4,
-    initialSlide: 0,
+  const navigationItems = [
+    { 
+      title: "What's New", 
+      content: <WhatsNewWomen />, 
+      isComponent: true 
+    },
+    { 
+      title: "Sale", 
+      items: ["Discount 1", "Discount 2", "Discount 3"],
+      isComponent: false 
+    },
+    { 
+      title: "Infant", 
+      items: ["Infant Product 1", "Infant Product 2", "Infant Product 3"],
+      isComponent: false 
+    },
+    { 
+      title: "Indian Wear", 
+      items: ["Indian Wear 1", "Indian Wear 2", "Indian Wear 3"],
+      isComponent: false 
+    },
+    { 
+      title: "Western Wear", 
+      items: ["Western Wear 1", "Western Wear 2", "Western Wear 3"],
+      isComponent: false 
+    },
+    { 
+      title: "Foot Wear", 
+      items: ["Foot Wear 1", "Foot Wear 2", "Foot Wear 3"],
+      isComponent: false 
+    },
+    { 
+      title: "Sports & Authentic", 
+      items: ["Sports 1", "Sports 2", "Sports 3"],
+      isComponent: false 
+    },
+  ];
+
+  const itemsPerPage = 6;
+  const maxStartIndex = Math.max(0, navigationItems.length - itemsPerPage);
+
+  const handleNext = () => {
+    setStartIndex((prev) => Math.min(prev + itemsPerPage, maxStartIndex));
   };
 
-  // Functions to control the slider via ref
-  const slideNext = (e) => {
-    e.stopPropagation(); // Prevent the dropdown from closing when clicking the slider button
-    if (sliderRef.current) {
-      sliderRef.current.slickNext(); // Move to the next slide
+  const handlePrev = () => {
+    setStartIndex((prev) => Math.max(prev - itemsPerPage, 0));
+  };
+
+  const handleMouseEnter = (index) => {
+    clearTimeout(timeoutRef.current);
+    setHoverIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setHoverIndex(null);
+    }, 300);
+  };
+
+  const toggleDropdown = (index, e) => {
+    e.stopPropagation();
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  const visibleItems = navigationItems.slice(startIndex, startIndex + itemsPerPage);
+
+  const renderDropdownContent = (item) => {
+    if (item.isComponent) {
+      return (
+        <div className="py-2 w-full">
+          {item.content}
+        </div>
+      );
     }
+    
+    return (
+      <div className="py-2">
+        {item.items.map((subItem, subIndex) => (
+          <a
+            key={subIndex}
+            href="#"
+            className="block px-4 py-2 text-sm text-gray-700  hover:text-gray-900"
+          >
+            {subItem}
+          </a>
+        ))}
+      </div>
+    );
   };
 
-  const slidePrev = (e) => {
-    e.stopPropagation(); // Prevent the dropdown from closing when clicking the slider button
-    if (sliderRef.current) {
-      sliderRef.current.slickPrev(); // Move to the previous slide
-    }
-  };
   return (
-    <div className="relative px-4">
-      {/* Custom Buttons Outside the Slider */}
-      <div onClick={(e) => e.stopPropagation()} className="absolute top-1/2 left-[-20px] transform -translate-y-1/2 z-10">
-        <button
-          onClick={slidePrev}
-          className="bg-gray-700 bg-opacity-50 text-white rounded-full w-6 h-6 flex items-center justify-center"
-        >
-          <FaChevronLeft className="text-xl" />
-        </button>
-      </div>
-      <div className="absolute top-1/2 right-[-20px] transform -translate-y-1/2 z-10">
-        <button
-          onClick={slideNext}
-          className="bg-gray-700 bg-opacity-50 text-white rounded-full w-6 h-6 flex items-center justify-center"
-        >
-          <FaChevronRight className="text-xl" />
-        </button>
-      </div>
+    <div className="relative px-8 w-full">
+      <button
+        onClick={handlePrev}
+        disabled={startIndex === 0}
+        className={`absolute top-1/2 left-0 -translate-y-1/2 z-20 bg-gray-700 bg-opacity-50 text-white rounded-full w-8 h-8 flex items-center justify-center transition-all
+          ${startIndex === 0 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-opacity-75'}`}
+      >
+        <ChevronLeft className="w-5 h-5" />
+      </button>
 
-      {/* Slider Component */}
-      <Slider ref={sliderRef} {...settings}>
-        <div>
-          <h3>What's New</h3>
+      <button
+        onClick={handleNext}
+        disabled={startIndex >= maxStartIndex}
+        className={`absolute top-1/2 right-0 -translate-y-1/2 z-20 bg-gray-700 bg-opacity-50 text-white rounded-full w-8 h-8 flex items-center justify-center transition-all
+          ${startIndex >= maxStartIndex ? 'opacity-50 cursor-not-allowed' : 'hover:bg-opacity-75'}`}
+      >
+        <ChevronRight className="w-5 h-5" />
+      </button>
+
+      <div className="mx-4">
+        <div className="grid grid-cols-6 gap-4">
+          {visibleItems.map((item, index) => (
+            <div key={index} className="px-2">
+              <div
+                className="relative"
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={handleMouseLeave}
+              >
+                <div
+                  className="cursor-pointer py-1 px-4  text-center hover:text-pink-500 transition-colors"
+                  onClick={(e) => toggleDropdown(index, e)}
+                >
+                  <h3 className="text-sm font-bold font-inter truncate">{item.title}</h3>
+                </div>
+                
+                {(activeIndex === index || hoverIndex === index) && (
+                  <div className="absolute left-0 z-50 w-[800px] mt-2 bg-white shadow-lg rounded-lg overflow-hidden border">
+                    {renderDropdownContent(item)}
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
         </div>
-        <div>
-          <h3>Sale</h3>
-        </div>
-        <div>
-          <h3>Infant</h3>
-        </div>
-        <div>
-          <h3>Indian Wear</h3>
-        </div>
-        <div>
-          <h3>Western Wear</h3>
-        </div>
-        <div>
-          <h3>Foot Wear</h3>
-        </div>
-        <div>
-          <h3>Sports & Authentic</h3>
-        </div>
-        <div>
-          <h3>8</h3>
-        </div>
-      </Slider>
+      </div>
     </div>
   );
 };

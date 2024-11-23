@@ -33,8 +33,8 @@ const Footer = () => {
     <footer className="w-full h-full">
       {/* Top Section */}
       <div className="w-full h-full bg-[#333333] text-white">
-        <div className="py-6 px-4 w-full h-full max-w-[1200px] mx-auto">
-          <div className="flex flex-col md:flex-row justify-around items-center">
+        <div className="py-6  px-4  w-full h-full max-w-[1400px] mx-auto">
+          <div className="flex flex-col md:flex-row justify-between lg:items-start items-center">
             <div className="mb-4 lg:mb-0">
               <h3 className="font-semibold mb-2">DOWNLOAD OUR APP</h3>
               <div className="flex gap-4">
@@ -44,11 +44,12 @@ const Footer = () => {
                 </div>
                 <div className="w-36 h-12 flex items-center justify-center cursor-pointer ">
                   {/* Placeholder for App Store */}
+
                   <img src={HomeImage.appleStore} alt='googlePly' />
                 </div>
               </div>
             </div>
-            <div className="text-center md:text-left font-inter">
+            <div className="text-center md:text-left font-inter lg:mr-[350px] mr-0">
               <h3 className="font-semibold mb-2 font-inter">
                 FOR ANY HELP, YOU MAY CALL US AT
               </h3>

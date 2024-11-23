@@ -81,11 +81,30 @@ import fashion9 from '../../assets/LandingImge/landingPage/fashion9.avif';
 import fashion10 from '../../assets/LandingImge/landingPage/fashion10.avif';
 import googlePly from '../../assets/LandingImge/landingPage/googlePlay.avif';
 import appleStore from '../../assets/LandingImge/landingPage/appleStore.avif';
+import Anuvas from '../../assets/LandingImge/women-whts-new/Anuvas.avif';
+import CottonCore from '../../assets/LandingImge/women-whts-new/Cotton-Core.avif';
+import FloralJewellery from '../../assets/LandingImge/women-whts-new/Floral-Jewellery.avif';
+import HighRiseTrousers from '../../assets/LandingImge/women-whts-new/High-Rise-Trousers.avif';
+import JaipurKurti from '../../assets/LandingImge/women-whts-new/Jaipur-Kurti.avif';
+import JustIn_2 from '../../assets/LandingImge/women-whts-new/Just-In_2.avif';
+import JustIn_1 from '../../assets/LandingImge/women-whts-new/Just-In_1.avif';
+import Kica from '../../assets/LandingImge/women-whts-new/KICA.avif';
+import Kotty from '../../assets/LandingImge/women-whts-new/Kotty.avif';
+import Midsummer from '../../assets/LandingImge/women-whts-new/Midsummer.avif';
+import Nud from '../../assets/LandingImge/women-whts-new/NUD.avif';
+import PopHuedBags from '../../assets/LandingImge/women-whts-new/Pop-Hued-Bags.avif';
+import RomanticFlorals from '../../assets/LandingImge/women-whts-new/Romantic-Florals.avif';
+import RsvpNykaa from '../../assets/LandingImge/women-whts-new/RSVP-by-Nykaa-Fashion.avif';
+import Savi from '../../assets/LandingImge/women-whts-new/Savi.avif';
+import Theater from '../../assets/LandingImge/women-whts-new/Theater.avif';
+import TheVeshtiCompany from '../../assets/LandingImge/women-whts-new/The-Veshti-Company.avif';
+
+
 
 
 
 // Exporting images as named exports
 export { 
-  sl1, sl2,sl3,sl4,sl5,sl6,sl7,sl8,sl9,sl10,sl11,sl12,sl13,bigSl1,bigSl2,bigSl3,bigSl4,Bigbanner1 ,Bigbanner2,Bigbanner3,Bigbanner4,Bigbanner5,Bigbanner6,Bigbanner7,Bigbanner8,spotlight1,spotlight2,spotlight3,spotlight4,spotlight5,spotlight6,spotlight7,spotlight8,spotlight9,spotlight10,hiddenhem1,hiddenhem2,hiddenhem3,hiddenhem4,hiddenhem10,hiddenhem5,hiddenhem6,hiddenhem7,exclusive1,exclusive2,exclusive3,exclusive4,exclusive5,exclusive6,exclusive8,exclusive9,exclusivesSl1,exclusivesSl2,exclusivesSl3,exclusivesSl4,exclusivesSl5,exclusivesSl6,exclusivesSl7,exclusivesSl8,exclusivesSl9,exclusivesSl10,hotestSl1,hotestSl2,hotestSl3,hotestSl4,hotestSl5,hotestSl6,hotestSl7,hotestSl8,hotestSl9,hotestSl10,fashion1,fashion2,fashion3,fashion4,fashion5,fashion6,fashion7,fashion8,fashion9,fashion10,googlePly,appleStore
+  sl1, sl2,sl3,sl4,sl5,sl6,sl7,sl8,sl9,sl10,sl11,sl12,sl13,bigSl1,bigSl2,bigSl3,bigSl4,Bigbanner1 ,Bigbanner2,Bigbanner3,Bigbanner4,Bigbanner5,Bigbanner6,Bigbanner7,Bigbanner8,spotlight1,spotlight2,spotlight3,spotlight4,spotlight5,spotlight6,spotlight7,spotlight8,spotlight9,spotlight10,hiddenhem1,hiddenhem2,hiddenhem3,hiddenhem4,hiddenhem10,hiddenhem5,hiddenhem6,hiddenhem7,exclusive1,exclusive2,exclusive3,exclusive4,exclusive5,exclusive6,exclusive8,exclusive9,exclusivesSl1,exclusivesSl2,exclusivesSl3,exclusivesSl4,exclusivesSl5,exclusivesSl6,exclusivesSl7,exclusivesSl8,exclusivesSl9,exclusivesSl10,hotestSl1,hotestSl2,hotestSl3,hotestSl4,hotestSl5,hotestSl6,hotestSl7,hotestSl8,hotestSl9,hotestSl10,fashion1,fashion2,fashion3,fashion4,fashion5,fashion6,fashion7,fashion8,fashion9,fashion10,googlePly,appleStore,Anuvas,CottonCore,FloralJewellery,HighRiseTrousers,JaipurKurti,JustIn_2,Kica,Kotty,Midsummer,Nud,PopHuedBags,RomanticFlorals,RsvpNykaa,Savi,TheVeshtiCompany,Theater,JustIn_1
 
 };

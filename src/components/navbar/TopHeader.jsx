@@ -44,8 +44,8 @@ const TopHeader = () => {
 
   // Dropdown component for Women
   const WomenDropdown = () => (
-    <div onClick={(e) => e.stopPropagation()}  className="absolute left-[-345px] mt-4 w-[97vw] bg-white  rounded-md border-b border-t border-gray-200">
-      <div  className="block px-4 py-3 text-sm hover:bg-gray-100"><WomenNavSlider/></div>
+    <div onClick={(e) => e.stopPropagation()}  className="absolute left-[-356px] mt-4 w-[99vw] bg-white  rounded-md border-b border-t border-gray-200">
+      <div  className="block px-10 py-3 text-sm hover:bg-gray-100"><WomenNavSlider/></div>
     </div>
   );
 
