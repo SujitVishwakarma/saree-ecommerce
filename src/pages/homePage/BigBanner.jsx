@@ -6,9 +6,9 @@ const BigBanner = () => {
       <div className="flex flex-col items-center w-full h-full max-w-[1460px] mx-auto lg:px-10 px-2">
         {/* upper paert  */}
         <div className="lg:px-10 px-2 w-full mb-8">
-          <div className="flex w-full h-full justify-between">
+          <div className="flex w-full h-full lg:justify-between justify-around">
             {/* left part  */}
-            <div className="flex items-start w-[50%]  h-full">
+            <div className="flex items-start lg:w-[50%] w-[25%]  h-full">
               <img
                 src={HomeImage.Bigbanner1}
                 alt="Bigbanner1"
@@ -21,7 +21,7 @@ const BigBanner = () => {
               />
             </div>
             {/* right part  */}
-            <div className="flex items-start w-[50%]  h-full">
+            <div className="flex items-start lg:w-[50%] w-[25%]  h-full">
               <img
                 src={HomeImage.Bigbanner3}
                 alt="Bigbanner1"
@@ -36,9 +36,9 @@ const BigBanner = () => {
           </div>
         </div>
         {/* lower part is here  */}
-        <div className="flex lg:flex-row flex-col lg:items-start items-center w-full h-full max-w-[1460px] mx-auto mb-4 justify-between">
+        <div className="flex lg:flex-row flex-col lg:items-start items-center w-full h-full max-w-[1460px] lg:mx-auto mx-2 mb-4 lg:justify-between justify-around">
           {/* left part  */}
-          <div className="flex items-center justify-between w-full h-full">
+          <div className="flex items-center lg:justify-between justify-center w-full h-full">
             <img
               src={HomeImage.Bigbanner5}
               alt="Bigbanner1"

@@ -4,6 +4,8 @@ import CategorySlider from './CategorySlider'
 import BigSlider from './BigSlider'
 import BigBanner from './BigBanner'
 import Spotlight from './Spotlight'
+import HiddenGems from './HiddenGems'
+import Exclusive from './Exclusive'
 const HomePage = () => {
   return (
     <div className='w-full h-full'>
@@ -12,6 +14,8 @@ const HomePage = () => {
       <BigSlider/>
       <BigBanner/>
       <Spotlight/>
+      <HiddenGems/>
+      <Exclusive/>
     </div>
   )
 }

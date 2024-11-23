@@ -34,11 +34,39 @@ import spotlight7 from '../../assets/LandingImge/landingPage/spotlight7.avif';
 import spotlight8 from '../../assets/LandingImge/landingPage/spotlight8.avif';
 import spotlight9 from '../../assets/LandingImge/landingPage/spotlight9.avif';
 import spotlight10 from '../../assets/LandingImge/landingPage/spotlight10.avif';
+import hiddenhem1 from '../../assets/LandingImge/landingPage/hiddengem1.avif';
+import hiddenhem2 from '../../assets/LandingImge/landingPage/hiddengem2.avif';
+import hiddenhem3 from '../../assets/LandingImge/landingPage/hiddengem3.avif';
+import hiddenhem4 from '../../assets/LandingImge/landingPage/hiddengem4.avif';
+import hiddenhem5 from '../../assets/LandingImge/landingPage/hiddengem5.avif';
+import hiddenhem6 from '../../assets/LandingImge/landingPage/hiddengem6.avif';
+import hiddenhem7 from '../../assets/LandingImge/landingPage/hiddengem7.avif';
+import hiddenhem10 from '../../assets/LandingImge/landingPage/hiddengem10.avif';
+import exclusive1 from '../../assets/LandingImge/landingPage/exclusive1.avif';
+import exclusive2 from '../../assets/LandingImge/landingPage/exclusive2.avif';
+import exclusive3 from '../../assets/LandingImge/landingPage/exclusive3.avif';
+import exclusive4 from '../../assets/LandingImge/landingPage/exclusive4.avif';
+import exclusive5 from '../../assets/LandingImge/landingPage/exclusive5.avif';
+import exclusive6 from '../../assets/LandingImge/landingPage/exclusive6.avif';
+import exclusive9 from '../../assets/LandingImge/landingPage/exclusive9.avif';
+import exclusive8 from '../../assets/LandingImge/landingPage/exclusive8.avif';
+import exclusivesSl1 from '../../assets/LandingImge/landingPage/exclusiveSl1.avif';
+import exclusivesSl2 from '../../assets/LandingImge/landingPage/exclusiveSl2.avif';
+import exclusivesSl3 from '../../assets/LandingImge/landingPage/exclusiveSl3.avif';
+import exclusivesSl4 from '../../assets/LandingImge/landingPage/exclusiveSl4.avif';
+import exclusivesSl5 from '../../assets/LandingImge/landingPage/exclusiveSl5.avif';
+import exclusivesSl6 from '../../assets/LandingImge/landingPage/exclusiveSl6.avif';
+import exclusivesSl7 from '../../assets/LandingImge/landingPage/exclusiveSl7.avif';
+import exclusivesSl8 from '../../assets/LandingImge/landingPage/exclusiveSl8.avif';
+import exclusivesSl9 from '../../assets/LandingImge/landingPage/exclusiveSl9.avif';
+import exclusivesSl10 from '../../assets/LandingImge/landingPage/exclusiveSl10.avif';
+
+
 
 
 
 // Exporting images as named exports
 export { 
-  sl1, sl2,sl3,sl4,sl5,sl6,sl7,sl8,sl9,sl10,sl11,sl12,sl13,bigSl1,bigSl2,bigSl3,bigSl4,Bigbanner1 ,Bigbanner2,Bigbanner3,Bigbanner4,Bigbanner5,Bigbanner6,Bigbanner7,Bigbanner8,spotlight1,spotlight2,spotlight3,spotlight4,spotlight5,spotlight6,spotlight7,spotlight8,spotlight9,spotlight10
+  sl1, sl2,sl3,sl4,sl5,sl6,sl7,sl8,sl9,sl10,sl11,sl12,sl13,bigSl1,bigSl2,bigSl3,bigSl4,Bigbanner1 ,Bigbanner2,Bigbanner3,Bigbanner4,Bigbanner5,Bigbanner6,Bigbanner7,Bigbanner8,spotlight1,spotlight2,spotlight3,spotlight4,spotlight5,spotlight6,spotlight7,spotlight8,spotlight9,spotlight10,hiddenhem1,hiddenhem2,hiddenhem3,hiddenhem4,hiddenhem10,hiddenhem5,hiddenhem6,hiddenhem7,exclusive1,exclusive2,exclusive3,exclusive4,exclusive5,exclusive6,exclusive8,exclusive9,exclusivesSl1,exclusivesSl2,exclusivesSl3,exclusivesSl4,exclusivesSl5,exclusivesSl6,exclusivesSl7,exclusivesSl8,exclusivesSl9,exclusivesSl10
 
 };
